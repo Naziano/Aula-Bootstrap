@@ -21,7 +21,8 @@
                             class="form-control"
                             name="nome"
                             id="nome"
-                            placeholder="Digite seu nome aqui...">
+                            placeholder="Digite seu nome aqui..."
+                            autofocus>
                         </div>
 
                         <div class="form-group"><!--grupo de componente fone-->
@@ -36,23 +37,39 @@
                         <div class="form-group"><!--inicio do campo sexo-->
                            <div class="form-check form-check-inline">
                             <label for="masc">Masculino
-                            <input type="radio" name="sexo" id="masc">
+                            <input type="radio" name="sexo" id="masc"
+                            checked>
                             </label>
                            </div>
                            
-                           <div class="form-check form-check-inline">
-                                <label for="fem">Feminino
-                                <input type="radio" name="sexo" id="fem">
-                                </label>
-                               </div> 
+                        <div class="form-check form-check-inline">
+                            <label for="fem">Feminino
+                            <input type="radio" name="sexo" id="fem">
+                             </label>
+                            </div> 
                                
-                               <div class="form-check form-check-inline">
-                                    <label for="indef">Não Especificar
-                                    <input type="radio" name="sexo" id="indef">
-                                    </label>
-                                   </div>   
-                            
+                        <div class="form-check form-check-inline">
+                            <label for="indef">Não Especificar
+                             <input type="radio" name="sexo" id="indef">
+                             </label>
+                            </div>   
                         </div><!--final do campo sexo-->
+
+                        <div class="form-group"><!--inicio do campo cidade-->
+                            <label for="cidade">Cidade</label>
+                            <select class="form-control" name="cidade" id="cidade">
+                            <option selected>Selecione...</option>   
+                            <option>Natal</option>
+                            <option>Mossoró</option>
+                            <option>Parnamirim</option>
+                            <option>São Gonçalo do Amarante</option>
+                            </select>
+                        </div><!--final do campo cidade-->
+
+                        <div class="form-group"><!--inicio do campo botões-->
+                            <button type="submit" class="btn btn-success" >Salvar</button>
+                            <button type="submit" class="btn btn-danger">Limpar</button>
+                        </div><!--final do campo botões-->
                     </fieldset>
                 </form>
 
